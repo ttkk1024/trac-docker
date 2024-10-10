@@ -23,11 +23,6 @@ development process and policies.
     $ docker build -t trac ./
     ```
 
-* just pull it from Dockerhub
-
-    ```
-    $ docker pull stephenhsu/trac
-    ```
 
 
 # How to run the container
@@ -37,7 +32,7 @@ development process and policies.
 Just run
 
 ```
-$ docker run -d -p 8123:8123 --name my_trac stephenhsu/trac
+$ docker run -d -p 8123:8123 trac
 ```
 
 After several seconds, you can visit the web page at
