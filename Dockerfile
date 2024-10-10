@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 MAINTAINER = Di Xu <stephenhsu90@gmail.com>
 ENV TRAC_ADMIN_NAME trac_admin
 ENV TRAC_ADMIN_PASSWD passw0rd
