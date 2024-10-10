@@ -1,11 +1,9 @@
 # trac-docker
 
-[![](https://images.microbadger.com/badges/version/stephenhsu/trac.svg)](https://hub.docker.com/r/stephenhsu/trac/ "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/stephenhsu/trac.svg)](https://hub.docker.com/r/stephenhsu/trac/)
-[![Docker Hub](http://img.shields.io/docker/pulls/stephenhsu/trac.svg)](https://hub.docker.com/r/stephenhsu/trac/)
+
 
 This repo is used to host a bunldle to create a docker container (based on
-Ubuntu Xenial) running [Trac](http://trac.edgewall.org),
+Ubuntu:latest) running [Trac](http://trac.edgewall.org),
 which is an enhanced wiki and issue tracking system for software development
 projects. Trac uses a minimalistic approach to web-based software project
 management. It helps developers write great software while staying out of
@@ -18,7 +16,7 @@ development process and policies.
 * Build it using Dockerfile
 
     ```ssh
-    $ git clone https://github.com/dixudx/trac-docker
+    $ git clone https://github.com/ttkk1024/trac-docker
     $ cd trac-docker
     $ docker build -t trac ./
     ```
@@ -92,7 +90,7 @@ You can make your own customizations (such as adding TLS etc.) in
 starting a container.
 
 ```
-$ docker run -d -p 8123:8123 -v ./trac.conf:/etc/apache2/sites-available/trac.conf --name my_trac stephenhsu/trac
+$ docker run -d -p 8123:8123 -v ./trac.conf:/etc/apache2/sites-available/trac.conf trac
 ```
 
 # Reference
